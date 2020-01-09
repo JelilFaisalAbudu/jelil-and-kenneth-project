@@ -8,7 +8,7 @@
   </head>
   <body>
     <main id="main-doc">
-      <section class="main-section">
+      <section id="Generator_methods" class="main-section">
         <header>Generator methods</header>
         <p>
           Generator methods can be defined using the shorthand syntax as well.
@@ -19,13 +19,35 @@
           and will throw a SyntaxError. Always use yield in conjunction with the
           asterisk (*).
         </p>
+        <p>
+          The concat() method is used to join two or more arrays. This method
+          does not change the existing arrays, but returns a new array,
+          containing the values of the joined arrays.
+        </p>
+        <code
+          >var hege = ["Cecilie", "Lone"]; var stale = ["Emil", "Tobias",
+          "Linus"]; var children = hege.concat(stale);</code
+        >
+        <li>Programming Topics</li>
       </section>
-      <section id="findIndex" class="main-section">
+      <section id="findIndex()" class="main-section">
         <header>findIndex()</header>
         <p>
           It does what it says, gives you the index value if the value is
           present in the array and -1 if it’s not present. p>
         </p>
+        <p>
+          This is very useful in conditional statements where want to proceed
+          only if the value is present. Line 8 in the above code snippet
+          statement will return true if 4 exists in the array, and false
+          otherwise. Short and simple! And you can perform the same operation on
+          an array of objects as well.
+        </p>
+        <code
+          >const numbers = [1, 2, 3, 4, 10]; numbers.findIndex( x => x === 4 );
+          // returns 3 numbers.find( x => x === 15); // returns -1</code
+        >
+        <li>Programming Topics</li>
       </section>
 
       <section id="find()" class="main-section">
@@ -37,6 +59,16 @@
           this for you in JS, avoiding the need to write loops on your own every
           time you want to find something.
         </p>
+        <p>
+          Note:find and findIndex() methods will return the first element or its
+          position that satisfies the given test function or expression.
+        </p>
+        <code>
+          const numbers = [1, 2, 3, 4, 10]; numbers.find( x => x === 4 ); //
+          returns 4 numbers.find( x => x > 5 ); // returns 10 const itemPresent
+          = numbers.find( x => x === 4 ); return itemPresent ? true : false;
+        </code>
+        <li>Programming Topics</li>
       </section>
       <section id="filter()" class="main-section">
         <header>filter()</header>
@@ -44,6 +76,15 @@
           It gives you a new array, with all the values from the given array
           that satisfy the given condition or test.
         </p>
+        <p>
+          The same method works with an array of objects as well.
+        </p>
+        <code
+          >const numbers = [1, 2, 3, 4, 10]; const evenNumbers = numbers.filter(
+          x => x % 2 === 0 ); console.log(evenNumbers); // returns [2, 4,
+          10]</code
+        >
+        <li>Programming Topics</li>
       </section>
       <section id="includes()" class="main-section">
         <header>includes()</header>
@@ -51,6 +92,16 @@
           The include method simply returns true or false after checking whether
           the given array contains the provided element or not.
         </p>
+        <p>
+          The spread operator is a utility operator that be used for multiple
+          purposes, like copying an array or concatenating two arrays.
+        </p>
+        <code>
+          const cars = ['BMW', 'Toyota', 'Tesla', 'Audi'];
+          console.log(cars.includes('Toyota')); // true
+          console.log(cars.includes('mercedes')); // false</code
+        >
+        <li>Programming Topics</li>
       </section>
     </main>
 
