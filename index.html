@@ -9,19 +9,48 @@
   <body>
     <main id="main-doc">
       <section class="main-section">
-        <header></header>
+        <header>Generator methods</header>
+        <p>
+          Generator methods can be defined using the shorthand syntax as well.
+          When doing so: The asterisk (*) in the shorthand syntax must be before
+          the generator property name. (That is, * g(){} will work, but g *(){}
+          will not.) Non-generator method definitions cannot contain the yield
+          keyword. This means that legacy generator functions won't work either,
+          and will throw a SyntaxError. Always use yield in conjunction with the
+          asterisk (*).
+        </p>
       </section>
       <section class="main-section">
-        <header></header>
+        <header>findIndex()</header>
+        <p>
+          It does what it says, gives you the index value if the value is
+          present in the array and -1 if it’s not present. p>
+        </p>
+      </section>
+
+      <section class="main-section">
+        <header>find()</header>
+        <p>
+          Finding if a particular value exists in a given array is one of the
+          most basic operations we will have to perform on an array in almost
+          every case. The find method is a very short and sleek method that does
+          this for you in JS, avoiding the need to write loops on your own every
+          time you want to find something.
+        </p>
       </section>
       <section class="main-section">
-        <header></header>
+        <header>filter()</header>
+        <p>
+          It gives you a new array, with all the values from the given array
+          that satisfy the given condition or test.
+        </p>
       </section>
       <section class="main-section">
-        <header></header>
-      </section>
-      <section class="main-section">
-        <header></header>
+        <header>includes()</header>
+        <p>
+          The include method simply returns true or false after checking whether
+          the given array contains the provided element or not.
+        </p>
       </section>
     </main>
 
